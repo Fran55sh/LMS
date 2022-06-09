@@ -1,0 +1,167 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: white;
+}
+
+main nav {
+  width: 100%;
+}
+
+main nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main nav ul li {
+  list-style: none;
+  padding-right: 30px;
+}
+
+main nav ul li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #9B9B9B;
+}
+
+main .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
+main .contenido .titulo {
+  color: #9040C1;
+  font-size: 2rem;
+}
+
+main .contenido .texto-principal {
+  width: 70%;
+  text-align: justify;
+  padding-bottom: 70px;
+  font-size: 1.5rem;
+}
+
+main .contenido .contenido-imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 50px;
+}
+
+main .contenido .contenido-imagenes img {
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 30%;
+}
+
+aside {
+  min-width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(145.92deg, #9040C1 23.09%, #F84CF0 144.07%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside .login {
+  display: block;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+aside .login .imgcontainer {
+  text-align: center;
+}
+
+aside .login .form input {
+  display: inline-block;
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  padding: 30px 0 30px 0;
+}
+
+aside .login .form ::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  color: #CFCFCF;
+}
+
+aside .login .form :-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  color: #CFCFCF;
+}
+
+aside .login .form ::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  color: #CFCFCF;
+}
+
+aside .login .form ::placeholder {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  color: #CFCFCF;
+}
+
+aside .login .form .line {
+  width: 100%;
+  height: 1px;
+  background-color: #F84CF0;
+}
+
+aside .login .form .psw a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+aside .login .signBtn {
+  margin-top: 20px;
+}
+
+aside .login .signBtn button {
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat";
+}
+/*# sourceMappingURL=style.css.map */
