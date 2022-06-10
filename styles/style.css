@@ -30,6 +30,10 @@ main nav ul li a {
   color: #9B9B9B;
 }
 
+main .section {
+  position: relative;
+}
+
 main .contenido {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +57,6 @@ main .contenido .titulo {
 main .contenido .texto-principal {
   width: 70%;
   text-align: justify;
-  padding-bottom: 70px;
   font-size: 1.5rem;
 }
 
@@ -77,6 +80,7 @@ main .contenido .contenido-imagenes img {
 }
 
 aside {
+  height: 100vh;
   min-width: 30vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +114,13 @@ aside .login .form input {
   background-color: transparent;
   border-style: none;
   padding: 30px 0 30px 0;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  color: #CFCFCF;
+}
+
+aside .login .form:active {
+  border: none;
 }
 
 aside .login .form ::-webkit-input-placeholder {
@@ -142,18 +153,36 @@ aside .login .form .line {
   background-color: #F84CF0;
 }
 
-aside .login .form .psw a {
+aside .login .form .psw {
+  color: #CFCFCF;
   font-size: 1.4rem;
-  text-decoration: none;
+}
+
+aside .login .form .psw a {
+  color: #CFCFCF;
 }
 
 aside .login .signBtn {
-  margin-top: 20px;
+  margin-top: 90px;
 }
 
 aside .login .signBtn button {
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+aside .login .signBtn button:first-child {
+  background-color: #F84CF0;
+  border: none;
+}
+
+aside .login .signBtn button:nth-child(2) {
+  background-color: transparent;
+  margin-left: 20px;
+  border: solid 1.2px  white;
 }
 
 body {
