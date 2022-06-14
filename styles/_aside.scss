@@ -69,6 +69,7 @@ aside {
             color: black;
             font-family: $primary-font-style;
             font-size: 1.5rem;
+            border: solid 1.2px  white;
 
             &:first-child{
                 background: $secondary-color;
@@ -77,8 +78,6 @@ aside {
             
             &:nth-child(2){
                 background-color: transparent;
-                margin-left: 20px;
-                border: solid 1.2px  white;
             }
         }
 
@@ -91,7 +90,7 @@ aside {
     align-items: center;
     padding-bottom: 50px;
 
-    img{
+    svg{
       width: 50px;
     }
   }
