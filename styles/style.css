@@ -8,6 +8,8 @@ main {
 
 main nav {
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 main nav ul {
@@ -17,6 +19,8 @@ main nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin: 0;
+  padding: 20px 0 20px 0;
 }
 
 main nav ul li {
@@ -27,14 +31,23 @@ main nav ul li {
 main nav ul li a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: #9B9B9B;
+  background: linear-gradient(13deg, #ffbebe 0%, #ffd5d5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 main .section {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-main .contenido {
+main .section .contenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,21 +59,21 @@ main .contenido {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 50px;
-  padding-top: 150px;
+  height: 100%;
 }
 
-main .contenido .titulo {
+main .section .contenido .titulo {
   color: #9040C1;
   font-size: 2rem;
 }
 
-main .contenido .texto-principal {
+main .section .contenido .texto-principal {
   width: 70%;
   text-align: justify;
   font-size: 1.5rem;
 }
 
-main .contenido .contenido-imagenes {
+main .section .contenido .contenido-imagenes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +85,7 @@ main .contenido .contenido-imagenes {
   padding-right: 50px;
 }
 
-main .contenido .contenido-imagenes img {
+main .section .contenido .contenido-imagenes img {
   border-radius: 7px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -89,7 +102,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(145.92deg, #9040C1 23.09%, #F84CF0 144.07%);
+  background: linear-gradient(145.92deg, #f4c2c2 23.09%, #ff97e7 144.07%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -108,43 +121,49 @@ aside .login .imgcontainer {
   text-align: center;
 }
 
-aside .login .form input {
-  display: inline-block;
-  width: 100%;
-  background-color: transparent;
-  border-style: none;
-  padding: 30px 0 30px 0;
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-  color: #CFCFCF;
+aside .login .imgcontainer .svg {
+  width: 35%;
 }
 
-aside .login .form:active {
-  border: none;
+aside .login .form input {
+  background-color: transparent;
+  border-style: none;
+  padding: 20px 0 10px 0;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  color: black;
+}
+
+aside .login .form input:focus {
+  outline: none;
 }
 
 aside .login .form ::-webkit-input-placeholder {
+  padding-bottom: 0;
   font-family: "Montserrat";
   font-size: 1.3rem;
-  color: #CFCFCF;
+  color: black;
 }
 
 aside .login .form :-ms-input-placeholder {
+  padding-bottom: 0;
   font-family: "Montserrat";
   font-size: 1.3rem;
-  color: #CFCFCF;
+  color: black;
 }
 
 aside .login .form ::-ms-input-placeholder {
+  padding-bottom: 0;
   font-family: "Montserrat";
   font-size: 1.3rem;
-  color: #CFCFCF;
+  color: black;
 }
 
 aside .login .form ::placeholder {
+  padding-bottom: 0;
   font-family: "Montserrat";
   font-size: 1.3rem;
-  color: #CFCFCF;
+  color: black;
 }
 
 aside .login .form .line {
@@ -154,28 +173,35 @@ aside .login .form .line {
 }
 
 aside .login .form .psw {
-  color: #CFCFCF;
+  padding-top: 10px;
+  color: black;
   font-size: 1.4rem;
 }
 
 aside .login .form .psw a {
-  color: #CFCFCF;
+  color: black;
 }
 
 aside .login .signBtn {
   margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 aside .login .signBtn button {
   padding: 10px 30px 10px 30px;
   border-radius: 30px;
-  color: white;
+  color: black;
   font-family: "Montserrat";
   font-size: 1.5rem;
 }
 
 aside .login .signBtn button:first-child {
-  background-color: #F84CF0;
+  background: #F84CF0;
   border: none;
 }
 
@@ -185,6 +211,23 @@ aside .login .signBtn button:nth-child(2) {
   border: solid 1.2px  white;
 }
 
+aside .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+aside .footer img {
+  width: 50px;
+}
+
 body {
   width: 100vw;
   margin: 0;
@@ -192,5 +235,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat";
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

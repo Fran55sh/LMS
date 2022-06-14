@@ -14,25 +14,28 @@ aside {
 
     .imgcontainer{
         text-align: center;
+
+        .svg{
+          width: 35%;
+           }
     }
 
     .form {
       input {
-        display: inline-block;
-        width: 100%;
         background-color: transparent;
         border-style: none;
-        padding: 30px 0 30px 0;
+        padding: 20px 0 10px 0;
         font-family: $primary-font-style;
         font-size: 1.5rem;
         color: $input-text-color;
+        &:focus{
+          outline: none;
+        }
       }
 
-      &:active{
-        border: none
-      }
 
       ::placeholder {
+        padding-bottom:0 ;
         font-family: $primary-font-style;
         font-size: 1.3rem;
         color: $input-text-color;
@@ -45,7 +48,7 @@ aside {
       }
 
       .psw{
-        //   color:$primary-text-color
+        padding-top: 10px;
         color: $input-text-color;
         font-size: 1.4rem;
         a{
@@ -56,17 +59,19 @@ aside {
 
     .signBtn{
         margin-top: 90px;
+        display: flex;
+        justify-content: space-evenly ;
         
 
         button{
             padding: 10px 30px 10px 30px;
             border-radius: 30px;
-            color: white;
+            color: black;
             font-family: $primary-font-style;
             font-size: 1.5rem;
 
             &:first-child{
-                background-color: $secondary-color;
+                background: $secondary-color;
                 border: none;
             }
             
@@ -78,6 +83,16 @@ aside {
         }
 
 
+    }
+  }
+  .footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+
+    img{
+      width: 50px;
     }
   }
 }
