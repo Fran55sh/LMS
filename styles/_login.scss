@@ -1,73 +1,290 @@
-main {
-  display: flex;
-  height: 100vh;
-  background: white;
+// main {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   height: 100vh;
+//   max-width: 100vw;
 
+header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  flex-direction: column;
+
+  .line {
+    width: 100%;
+    height: 2.5px;
+    background: $golden-color-gradiant;
+  }
   nav {
     width: 100%;
     height: 100%;
     ul {
-      display: flex;
-      justify-content: flex-end;
-      margin: 0;
       padding: 20px 0 20px 0;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      text-align: center;
 
       li {
+        padding: 0 50px 0 50px;
         list-style: none;
-        padding-right: 30px;
 
         a {
           font-size: 1.4rem;
           text-decoration: none;
-          background: $primary-text-color;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
       }
     }
   }
+}
 
-  .line{
-    width: 100%;
-    height: 4px;
-    background: $golden-color-gradiant;
+//   .section {
+//     width: 100vw;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     background: $primary-color-gradient ;
+
+//     .contenido {
+//       width: 60vw;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: flex-start;
+//       align-items: flex-start;
+//       padding-left: 50px;
+//       margin: 50px;
+//       background-color: white;
+
+//       .titulo {
+//         color: $secondaty-text-color;
+//         font-size: 2rem;
+//       }
+
+//       .texto-principal {
+//         width: 70%;
+//         text-align: justify;
+//         font-size: 1.5rem;
+//       }
+
+//       .contenido-imagenes {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-evenly;
+//         padding-right: 50px;
+
+//         img {
+//           border-radius: 7px;
+//           object-fit: cover;
+//           width: 30%;
+//         }
+//       }
+//     }
+
+
+
+aside {
+  padding: 0 30px 0 0px;
+  max-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 50px;
+
+  .login {
+    display: block;
+    align-items: center;
+    margin: auto;
+
+    .imgcontainer {
+      text-align: center;
+
+      .svg {
+        width: 20%;
+      }
+    }
+
+    .form {
+      input {
+        background-color: transparent;
+        border-style: none;
+        padding: 20px 0 10px 0;
+        font-family: $primary-font-style;
+        font-size: 1.5rem;
+        color: $input-text-color;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      ::placeholder {
+        padding-bottom: 0;
+        font-family: $primary-font-style;
+        font-size: 1.3rem;
+        color: $input-text-color;
+      }
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background: $golden-color-gradiant;
+      }
+
+      .psw {
+        padding-top: 5px;
+        color: $input-text-color;
+        font-size: 1rem;
+        text-align: center;
+        a {
+          color: $input-text-color;
+        }
+      }
+    }
+
+    .signBtn {
+      margin: 70px 10px 0;
+      display: flex;
+      justify-content: space-between;
+      
+      button {
+        width: 150px;
+        padding: 10px 30px 10px 30px;
+        margin:  20px;
+        border-radius: 30px;
+        color: black;
+        font-family: $primary-font-style;
+        font-size: 1rem;
+        border: solid 1.2px white;
+
+        &:first-child {
+          background: $secondary-color;
+          border: none;
+        }
+
+        &:nth-child(2) {
+          background-color: transparent;
+        }
+        &:nth-child(3) {
+          background: $secondary-color;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+// }
+// }
+
+body {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: $primary-color-gradient;
+  // background: linear-gradient(312deg, rgba(255,203,219,1) 0%, rgba(255,160,187,1) 100%);
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .contenido-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-evenly;
+
+    img {
+      border-radius: 7px;
+      object-fit: cover;
+      width: 30%;
+      height: auto;;
+    }
   }
 
-  .section {
-    // position: relative;
+  .texto {
     display: flex;
     flex-direction: column;
+    max-width: 40vw;
+    margin-top: 50px;
+    
 
-    .contenido {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-left: 50px;
-      height: 100%;
-
-      .titulo {
-        color: $secondaty-text-color;
-        font-size: 2rem;
-      }
-
-      .texto-principal {
-        width: 70%;
-        text-align: justify;
-        font-size: 1.5rem;
-      }
-
-      .contenido-imagenes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-right: 50px;
-
-        img {
-          border-radius: 7px;
-          object-fit: cover;
-          width: 30%;
-        }
-      }
+    .texto-principal {
+      text-align: justify;
+      font-size: 1rem;
     }
+  }
+
+}
+
+// 
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.footer {
+  padding: 50px 0 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  svg {
+    width: 30px;
+  }
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
   }
 }
